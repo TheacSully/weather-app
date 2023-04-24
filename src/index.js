@@ -38,11 +38,7 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
-//let dateElement = document.querySelector("#date");
-//let currentTime = new Date();
-//dateElement.innerHTML = formatDate(currentTime);
-
 let apiKey = "ct90a4732c5fd752o670f2a66b23ca38";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=New York&key=${apiKey}&units=metric`;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Macclesfield&key=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
