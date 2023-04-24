@@ -22,17 +22,18 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
         <div class="overview">
-          <h1>Pelican City</h1>
+          <h1 id="city"></h1>
           <ul>
-            <li>Friday 15:39</li>
-            <li>Sunny</li>
+            <li id="date-time"></li>
+            <li id="description"></li>
           </ul>
         </div>
         <div class="row">
@@ -48,9 +49,16 @@
           </div>
           <div class="col-6" id="stats">
             <ul>
-              <li>Precipitation: 82%</li>
-              <li>Humidity: 75%</li>
-              <li>Wind: 12kmph</li>
+              <li>
+                Humidity:
+                <span id="humidity"></span>
+                %
+              </li>
+              <li>
+                Wind:
+                <span id="wind"></span>
+                kmph
+              </li>
             </ul>
           </div>
         </div>
