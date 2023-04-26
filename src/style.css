@@ -2,6 +2,14 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.form-control {
+  font-size: 14px;
+}
+
+.button {
+  background-color: #051427;
+}
+
 h1 {
   color: #2f3c4f;
   font-size: 24px;
@@ -67,7 +75,7 @@ li {
   flex-direction: row;
   border: 3px solid #0a2a5b7a;
   border-radius: 100px;
-  width: 200px;
+  width: 250px;
   background-color: transparent;
   padding: 20px;
   margin-bottom: 60px;
