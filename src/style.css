@@ -6,10 +6,6 @@ body {
   font-size: 14px;
 }
 
-.button {
-  background-color: #051427;
-}
-
 h1 {
   color: #2f3c4f;
   font-size: 24px;
@@ -37,16 +33,6 @@ li {
   text-align: left;
 }
 
-.darkTheme {
-  display: block;
-  margin: 0 auto;
-  padding: 5px;
-  background: linear-gradient(to right, #051427 0%, #4a4f53 100%);
-  color: #afafaf;
-  border-radius: 0px 0px 50px 50px;
-  border: none;
-}
-
 .overview {
   margin-bottom: 20px;
 }
@@ -68,6 +54,16 @@ li {
   border: 3px solid #0a2a5bb1;
   border-radius: 5px;
   background: linear-gradient(to right, #f5efdec5 0%, #6dbaf5 100%);
+}
+
+.darkTheme {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  background: linear-gradient(to right, #051427 0%, #4a4f53 100%);
+  color: #afafaf;
+  border-radius: 0px 0px 50px 50px;
+  border: none;
 }
 
 .weather-temperature {
@@ -97,6 +93,18 @@ li {
 .weather-temperature units {
   position: relative;
   font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: #051427;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
 .footer {
