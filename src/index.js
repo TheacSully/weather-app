@@ -54,7 +54,7 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.condition.description);
 
-  getForecast(response.data.daily);
+  getForecast(response.data.city);
 }
 
 function search(city) {
@@ -129,7 +129,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-function getForecast() {
+function getForecast(city) {
   let apiKey = "ct90a4732c5fd752o670f2a66b23ca38";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
