@@ -53,7 +53,7 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
-
+  displayCelsiusTemperature({ preventDefault: function () {} });
   getForecast(response.data.city);
 }
 
